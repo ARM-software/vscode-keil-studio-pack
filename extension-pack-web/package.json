@@ -1,0 +1,32 @@
+{
+  "name": "keil-studio-pack-web",
+  "displayName": "Keil Studio Pack",
+  "description": "Extension pack for Keil Studio development",
+  "version": "1.0.6",
+  "preview": true,
+  "publisher": "Arm",
+  "author": "Rob Moran <rob.moran@arm.com>",
+  "license": "MIT",
+  "repository": "https://github.com/ARM-software/vscode-keil-studio-pack",
+  "qna": "https://github.com/ARM-software/vscode-keil-studio-pack/issues",
+  "icon": "arm.png",
+  "galleryBanner": {
+    "color": "#333E48",
+    "theme": "dark"
+  },
+  "engines": {
+    "vscode": "^1.63.0"
+  },
+  "categories": [
+    "Other",
+    "Extension Packs"
+  ],
+  "extensionPack": [
+    "arm.embedded-debug",
+    "arm.device-manager",
+    "arm.cmsis-csolution",
+    "redhat.vscode-yaml",
+    "jeff-hykin.better-cpp-syntax",
+    "ms-vscode.cpptools-themes"
+  ]
+}
