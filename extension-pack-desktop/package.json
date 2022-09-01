@@ -2,7 +2,7 @@
   "name": "keil-studio-pack",
   "displayName": "Keil Studio Pack",
   "description": "Extension pack for Keil Studio development",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "preview": true,
   "publisher": "Arm",
   "author": "Rob Moran <rob.moran@arm.com>",
@@ -34,7 +34,6 @@
     "llvm-vs-code-extensions.vscode-clangd",
     "ms-vscode.cmake-tools",
     "ms-vscode.cpptools-themes",
-    "ms-vscode.vscode-embedded-tools",
     "twxs.cmake"
   ]
 }
