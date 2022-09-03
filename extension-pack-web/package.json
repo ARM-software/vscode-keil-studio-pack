@@ -2,7 +2,7 @@
   "name": "keil-studio-pack-web",
   "displayName": "Keil Studio Pack",
   "description": "Extension pack for Keil Studio development",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "preview": true,
   "publisher": "Arm",
   "author": "Rob Moran <rob.moran@arm.com>",
@@ -22,10 +22,9 @@
     "Extension Packs"
   ],
   "extensionPack": [
-    "arm.embedded-debug",
     "arm.device-manager",
-    "arm.cmsis-csolution",
-    "redhat.vscode-yaml",
+    "arm.embedded-debug",
+    "arm.remote-build",
     "jeff-hykin.better-cpp-syntax",
     "ms-vscode.cpptools-themes"
   ]

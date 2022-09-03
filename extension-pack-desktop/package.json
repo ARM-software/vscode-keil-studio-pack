@@ -2,7 +2,7 @@
   "name": "keil-studio-pack",
   "displayName": "Keil Studio Pack",
   "description": "Extension pack for Keil Studio development",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "preview": true,
   "publisher": "Arm",
   "author": "Rob Moran <rob.moran@arm.com>",
@@ -26,14 +26,14 @@
     "onCommand:arm.keil-studio-pack.unavailableCommand"
   ],
   "extensionPack": [
-    "arm.embedded-debug",
-    "arm.device-manager",
     "arm.cmsis-csolution",
-    "redhat.vscode-yaml",
+    "arm.device-manager",
+    "arm.embedded-debug",
     "jeff-hykin.better-cpp-syntax",
     "llvm-vs-code-extensions.vscode-clangd",
     "ms-vscode.cmake-tools",
     "ms-vscode.cpptools-themes",
+    "redhat.vscode-yaml",
     "twxs.cmake"
   ]
 }
