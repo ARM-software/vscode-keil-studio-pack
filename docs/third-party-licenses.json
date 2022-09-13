@@ -1,0 +1,16 @@
+[
+    {
+        "name": "fontawesome-free",
+        "version": "6.1.1",
+        "spdx": "MIT",
+        "url": "https://github.com/FortAwesome/Font-Awesome",
+        "license": "https://github.com/FortAwesome/Font-Awesome/blob/6.x/LICENSE.txt"
+    },
+    {
+        "name": "webview-ui-toolkit",
+        "version": "0.9.3",
+        "spdx": "MIT",
+        "url": "https://github.com/microsoft/vscode-webview-ui-toolkit",
+        "license": "https://github.com/microsoft/vscode-webview-ui-toolkit/blob/main/LICENSE"
+    }
+]
