@@ -10,7 +10,7 @@ This Readme explains how to install the extensions with the **Keil Studio Pack**
 
 ## Submit feedback
 
-To submit feedback, please [create an issue](https://github.com/Arm-Debug/vscode-keil-studio-pack/issues/new/choose).
+To submit feedback, please [create an issue](https://github.com/Arm-Software/vscode-keil-studio-pack/issues/new/choose).
 
 ## Table of contents
 
@@ -76,7 +76,7 @@ When you are ready, follow the instructions below to:
 
 ### Connect your board
 
-1. Click the **Device Manager** icon ![Device Manager icon](./docs/images/device-manager-icon.png) in the Activity Bar to open the **Arm Device Manager** extension.
+1. Click the **Device Manager** icon ![Device Manager icon](../docs/images/device-manager-icon.png) in the Activity Bar to open the **Arm Device Manager** extension.
 
 1. Connect your board to your computer over USB. In our example we use the B-U585I-IOT02A board from STMicroelectronics.
 
@@ -92,15 +92,15 @@ There are two ways to build your project. You can do it from the **Explorer** or
 
 - From the **Explorer**:
 
-    1. Click the **Explorer** icon ![Explorer icon](./docs/images/explorer-icon.png) in the Activity Bar.
+    1. Click the **Explorer** icon ![Explorer icon](../docs/images/explorer-icon.png) in the Activity Bar.
 
     1. Right-click on the `.cprj` file corresponding to the context you selected for the project and select **Build**.
 
 - Using the **Build** button:
 
-    1. Click the **CMSIS** icon ![CMSIS icon](./docs/images/cmsis-icon.png) in the Activity Bar.
+    1. Click the **CMSIS** icon ![CMSIS icon](../docs/images/cmsis-icon.png) in the Activity Bar.
 
-    1. Click the **Build** button ![Build button](./docs/images/build-button.png) in the **ACTIONS** panel.
+    1. Click the **Build** button ![Build button](../docs/images/build-button.png) in the **ACTIONS** panel.
 
     1. In the drop-down list that opens at the top of the window, select the **cmsis-csolution.build:Build** task.
 
@@ -149,15 +149,19 @@ You must configure a task the first time you want to flash a csolution project t
 
 1. Download the CMSIS-Packs for the B-U585I-IOT02A board. The CMSIS-Packs are available on Arm Developer under the [Devices](https://developer.arm.com/embedded/cmsis/cmsis-packs/devices/STMicroelectronics/STM32U585AIIx) category.
 
-1. For `"cmsisPack"`, indicate the path where the CMSIS-Packs are stored. For example: `"/Users/<UserName>/Downloads/Keil.STM32U5xx_DFP.2.0.0.pack"`.
+1. For `"cmsisPack"`, indicate the path where the CMSIS-Packs are stored.
+
+    For example on Mac or Linux: `"$HOME/Downloads/Keil.STM32U5xx_DFP.2.0.0.pack"`. On Windows: `%HOME%\Downloads\Keil.STM32U5xx_DFP.2.0.0.pack`.
+
+    A path to unpacked CMSIS-Packs is also supported. Check the path set for the `CMSIS_PACK_ROOT` environment variable. If you had installed the CMSIS-Toolbox previously, or if you are a Keil MDK user, the path looks like this: `$HOME/.cache/arm/packs/Keil/STM32U5xx_DFP/2.0.0/` (on Mac or Linux), or `%HOME%\AppData\Local\Arm\Packs\Keil\STM32U5xx_DFP\2.0.0\` (on Windows).
 
 1. Save the `tasks.json` file.
 
 #### Flash the csolution project
 
-1. Click the **CMSIS** icon ![CMSIS icon](./docs/images/cmsis-icon.png) in the Activity Bar.
+1. Click the **CMSIS** icon ![CMSIS icon](../docs/images/cmsis-icon.png) in the Activity Bar.
 
-1. Click the **Flash** button ![Flash button](./docs/images/flash-button.png) in the **ACTIONS** panel.
+1. Click the **Flash** button ![Flash button](../docs/images/flash-button.png) in the **ACTIONS** panel.
 
 1. Select **STM32U585AIIx** in the drop-down list that opens at the top of the window.
 
@@ -194,15 +198,15 @@ In order to debug, you must first add a configuration.
 
 1. For `"program"`, replace `"${command:embedded-debug.getBinaryFile}"` by `"${command:cmsis-csolution.getBinaryFile}"`.
 
-1. For `"cmsisPack"`, indicate the path where the CMSIS-Packs are stored.
+1. For `"cmsisPack"`, indicate the path where the CMSIS-Packs are stored. See [Flash the csolution project to your board](#flash-the-csolution-project-to-your-board).
 
 1. Save the `launch.json` file.
 
 #### Debug
 
-1. Click the **CMSIS** icon ![CMSIS icon](./docs/images/cmsis-icon.png) in the Activity Bar.
+1. Click the **CMSIS** icon ![CMSIS icon](../docs/images/cmsis-icon.png) in the Activity Bar.
 
-1. Click the **Debug** button ![Debug button](./docs/images/debug-button.png) in the **ACTIONS** panel.
+1. Click the **Debug** button ![Debug button](../docs/images/debug-button.png) in the **ACTIONS** panel.
 
 1. Select **STM32U585AIIx** in the drop-down list that opens at the top of the window.
 
@@ -218,9 +222,9 @@ The serial output shows the output of your board.
 
 To check the serial output:
 
-1. Click the **CMSIS** icon ![CMSIS icon](./docs/images/cmsis-icon.png) in the Activity Bar.
+1. Click the **CMSIS** icon ![CMSIS icon](../docs/images/cmsis-icon.png) in the Activity Bar.
 
-1. Click the **Open Serial** button ![Open Serial button](./docs/images/open-serial-button.png) in the **ACTIONS** panel.
+1. Click the **Open Serial** button ![Open Serial button](../docs/images/open-serial-button.png) in the **ACTIONS** panel.
 
 1. Select a baud rate in the drop-down list that opens at the top of the window. The baud rate you select must be the same as the baud rate of the project.
 
