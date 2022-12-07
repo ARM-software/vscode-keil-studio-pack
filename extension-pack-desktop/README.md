@@ -88,13 +88,15 @@ When you are ready, follow the instructions below to:
 
 ### Build the csolution project
 
-There are two ways to build your project. You can do it from the **Explorer** or using the **Build** button. If you use the **Build** button, you must configure a task the first time you build your project.
+There are several ways to build your project. You can do it from the **Explorer** or using the **Build** button. If you use the **Build** button, you must configure a task the first time you build your project.
 
 - From the **Explorer**:
 
     1. Click the **Explorer** icon ![Explorer icon](../docs/images/explorer-icon.png) in the Activity Bar.
 
     1. Right-click on the `.cprj` file corresponding to the context you selected for the project and select **Build**.
+
+        **Note**: A **Rebuild** option is also available in the right-click menu. This option cleans output directories before building the project.
 
 - Using the **Build** button:
 
@@ -117,7 +119,12 @@ There are two ways to build your project. You can do it from the **Explorer** or
 
     1. Click the **Build** button again to build the project.
 
+        **Note**: If you click the drop-down next to the **Build** button, you can use the **Clean Build** option. **Clean Build** is the same as **Rebuild** in the right-click menu.
+
     1. Check the **TERMINAL** tab.
+
+
+**Note**: **Build** and **Rebuild** can also be triggered from the Command Palette with the **CMSIS: Build** and **CMSIS: Rebuild** commands.
 
 ### Flash the csolution project to your board
 
