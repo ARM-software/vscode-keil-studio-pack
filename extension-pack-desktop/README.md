@@ -8,6 +8,8 @@ The main Keil Studio extensions available are **Arm CMSIS csolution**, **Arm Dev
 
 This Readme explains how to install the extensions with the **Keil Studio Pack** and gives you the main steps to set up your development environment (check the **CMSIS csolution** extension Readme to get the full details). Once your environment is ready, check the [Tutorial](#tutorial) to understand what you can do with the extensions.
 
+For more information about supported hardware for CMSIS projects, go to [keil.arm.com](https://www.keil.arm.com/boards/). For an overview on CMSIS-Packs, go to [open-cmsis-pack.org](https://www.open-cmsis-pack.org/index.html).
+
 ## Submit feedback
 
 To submit feedback, please [create an issue](https://github.com/Arm-Software/vscode-keil-studio-pack/issues/new/choose).
@@ -48,7 +50,7 @@ The main extensions available are:
 
 ## Main steps to set up your development environment
 
-Once the extensions have been installed, there are extra installation and setup tasks to carry out. Check the **CMSIS csolution** extension Readme for more details.
+Once the extensions have been installed, there are extra installation and setup tasks to carry out. Check the [CMSIS csolution extension Readme](https://github.com/ARM-software/vscode-cmsis-csolution/blob/main/README.md#install-the-tools) for more details.
 
 Here are the main steps:
 
@@ -57,15 +59,15 @@ Here are the main steps:
 - Install CMSIS-Toolbox.
 - Initialize or update the catalog of public CMSIS-Pack versions.  
 - Install and set up the **clangd** extension. This extension provides IntelliSense support for C/C++ projects and integrates with the **CMSIS csolution** extension.
-- Modify extension settings.
+- Modify the **Arm CMSIS csolution** extension settings.
 
 ## Tutorial
 
 Once your Keil Studio development environment is set up, you can start working with a csolution project.
 
-Check the "Work with a csolution example project" section in the **CMSIS csolution** extension Readme to:
-- Clone a csolution example project.
-- Install the CMSIS-Packs required.
+Follow the steps in the "Work with a csolution example project" section in the **CMSIS csolution** extension Readme to:
+- Clone the Blinky example project available in the following repository: https://github.com/RobertRostohar/Demo_EW/.
+- Install the CMSIS-Packs required for the csolution.
 - Set a context for the csolution (select a build target and a build configuration).
 
 When you are ready, follow the instructions below to:
@@ -104,6 +106,10 @@ There are several ways to build your project. You can do it from the **Explorer*
 
     1. Click the **Build** button ![Build button](../docs/images/build-button.png) in the **ACTIONS** panel.
 
+        A popup message displays.
+
+    1. Click **OK**.
+
     1. In the drop-down list that opens at the top of the window, select the **cmsis-csolution.build:Build** task.
 
         A `tasks.json` file opens with some default configuration.
@@ -122,7 +128,6 @@ There are several ways to build your project. You can do it from the **Explorer*
         **Note**: If you click the drop-down next to the **Build** button, you can use the **Clean Build** option. **Clean Build** is the same as **Rebuild** in the right-click menu.
 
     1. Check the **TERMINAL** tab.
-
 
 **Note**: **Build** and **Rebuild** can also be triggered from the Command Palette with the **CMSIS: Build** and **CMSIS: Rebuild** commands.
 
@@ -154,9 +159,9 @@ You must configure a task the first time you want to flash a csolution project t
 
 1. For `"program"`, replace `"${command:embedded-debug.getBinaryFile}"` by `"${command:cmsis-csolution.getBinaryFile}"`.
 
-1. Download the CMSIS-Packs for the B-U585I-IOT02A board. The CMSIS-Packs are available on Arm Developer under the [Devices](https://developer.arm.com/embedded/cmsis/cmsis-packs/devices/STMicroelectronics/STM32U585AIIx) category.
+1. Download the CMSIS-Pack for the B-U585I-IOT02A board. The CMSIS-Pack is available on Arm Developer under the [Devices](https://developer.arm.com/embedded/cmsis/cmsis-packs/devices/STMicroelectronics/STM32U585AIIx) category.
 
-1. For `"cmsisPack"`, indicate the path where the CMSIS-Packs are stored.
+1. For `"cmsisPack"`, indicate the path where the CMSIS-Pack is stored.
 
     For example on Mac or Linux: `"$HOME/Downloads/Keil.STM32U5xx_DFP.2.0.0.pack"`. On Windows: `%HOME%\Downloads\Keil.STM32U5xx_DFP.2.0.0.pack`.
 
@@ -184,16 +189,14 @@ In order to debug, you must first add a configuration.
 
 1. Go to **Run** > **Add Configuration...**.
 
-1. A `launch.json` file opens.
+1. Select **Arm Embedded Debug** in the drop-down list that opens at the top of the window.
 
-1. In the drop-down list that opens after `"configurations"`, select **Arm: Embedded Debug**.
-
-    Some default configuration displays:
+1. A `launch.json` file opens. Some default configuration displays:
 
         ``{
             "configurations": [
                 {
-                    "name": "Embedded Debug",
+                    "name": "Arm Embedded Debug",
                     "type": "embedded-debug",
                     "request": "launch",
                     "serialNumber": "${command:device-manager.getSerialNumber}",
@@ -205,7 +208,7 @@ In order to debug, you must first add a configuration.
 
 1. For `"program"`, replace `"${command:embedded-debug.getBinaryFile}"` by `"${command:cmsis-csolution.getBinaryFile}"`.
 
-1. For `"cmsisPack"`, indicate the path where the CMSIS-Packs are stored. See [Flash the csolution project to your board](#flash-the-csolution-project-to-your-board).
+1. For `"cmsisPack"`, indicate the path where the CMSIS-Pack is stored. See [Flash the csolution project to your board](#flash-the-csolution-project-to-your-board).
 
 1. Save the `launch.json` file.
 
@@ -221,7 +224,7 @@ In order to debug, you must first add a configuration.
 
 1. Check the **DEBUG CONSOLE** tab to see the debugging output.
 
-Look at the [Visual Studio Code documentation](https://code.visualstudio.com/docs/editor/debugging#_debug-actions) to learn more about the debugging features available in Visual Studio Code
+Look at the [Visual Studio Code documentation](https://code.visualstudio.com/docs/editor/debugging#_debug-actions) to learn more about the debugging features available in Visual Studio Code.
 
 #### Check the serial output of your board
 
