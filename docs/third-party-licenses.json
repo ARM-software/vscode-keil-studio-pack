@@ -7,6 +7,27 @@
         "license": "https://github.com/FortAwesome/Font-Awesome/blob/6.x/LICENSE.txt"
     },
     {
+        "name": "react",
+        "version": "18.2.0",
+        "spdx": "MIT",
+        "url": "https://github.com/facebook/react",
+        "license": "https://github.com/facebook/react/blob/main/LICENSE"
+    },
+    {
+        "name": "react-dom",
+        "version": "18.2.0",
+        "spdx": "MIT",
+        "url": "https://github.com/facebook/react",
+        "license": "https://github.com/facebook/react/blob/main/LICENSE"
+    },
+    {
+        "name": "vscode-messenger",
+        "version": "0.4.4",
+        "spdx": "MIT",
+        "url": "https://github.com/TypeFox/vscode-messenger",
+        "license": "https://github.com/TypeFox/vscode-messenger/blob/main/LICENSE"
+    },
+    {
         "name": "webview-ui-toolkit",
         "version": "0.9.3",
         "spdx": "MIT",
