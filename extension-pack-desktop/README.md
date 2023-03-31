@@ -4,7 +4,7 @@
 
 This extension pack installs recommended extensions for Keil Studio development. The extensions included are listed in the **Details** of the pack in Visual Studio Code and detailed in the [Extensions available in the pack](#extensions-available-in-the-pack) section below.
 
-The main Keil Studio extensions available are **Arm CMSIS csolution**, **Arm Device Manager** and **Arm Embedded Debugger**. They can work in combination and enable you to manage CMSIS solutions (csolution projects), flash projects to a device and undertake debugging.
+The main Keil Studio extensions available are **Arm CMSIS csolution**, **Arm Device Manager** and **Arm Embedded Debugger**. They can work in combination and enable you to manage CMSIS solutions (csolution projects), run projects on a device and undertake debugging.
 
 This Readme explains how to install the extensions with the **Keil Studio Pack** and gives you the main steps to set up your development environment (check the **CMSIS csolution** extension Readme to get the full details). Once your environment is ready, check the [Tutorial](#tutorial) to understand what you can do with the extensions.
 
@@ -22,7 +22,7 @@ To submit feedback, please [create an issue](https://github.com/Arm-Software/vsc
 1. [Tutorial](#tutorial)
     - [Connect your board](#connect-your-board)
     - [Build the csolution project](#build-the-csolution-project)
-    - [Flash the csolution project to your board](#flash-the-csolution-project-to-your-board)
+    - [Run the csolution project on your board](#run-the-csolution-project-on-your-board)
     - [Launch a debug session](#launch-a-debug-session)
     - [Check the serial output of your board](#check-the-serial-output-of-your-board)
 
@@ -34,7 +34,7 @@ The main extensions available are:
 
 - **Arm Device Manager** (Identifier: `arm.device-manager`): This extension allows you to manage device connections for Arm Cortex-M based microcontrollers, development boards and debug probes.
 
-- **Arm Embedded Debugger** (Identifier: `arm.embedded-debug`): This extension allows you to do flashing and debugging on Arm Cortex-M based microcontrollers, development boards and debug probes implementing the Microsoft Debug Adapter Protocol (DAP).
+- **Arm Embedded Debugger** (Identifier: `arm.embedded-debug`): This extension allows you to run and debug projects on Arm Cortex-M based microcontrollers, development boards and debug probes implementing the Microsoft Debug Adapter Protocol (DAP).
 
 - **Arm Remote Build** (Identifier: `arm.remote-build`): This extension allows you to undertake remote builds of projects for Arm Cortex-M based microcontrollers. The extension only works with standalone CMSIS projects (containing a single `.cprj` project file). A token is required to access the service.
 
@@ -73,7 +73,7 @@ Follow the steps in the "Work with a csolution example project" section in the *
 When you are ready, follow the instructions below to:
 - Connect your board.
 - Build the csolution project.
-- Flash the project to your board.
+- Run the project on your board.
 - Launch a debug session.
 
 ### Connect your board
@@ -86,7 +86,7 @@ When you are ready, follow the instructions below to:
 
 1. Click **OK** in the pop up message to use the device.
 
-    Your board is now ready to be used for flashing and debugging.
+    Your board is now ready to be used to run and debug a project.
 
 ### Build the csolution project
 
@@ -131,9 +131,9 @@ There are several ways to build your project. You can do it from the **Explorer*
 
 **Note**: **Build** and **Rebuild** can also be triggered from the Command Palette with the **CMSIS: Build** and **CMSIS: Rebuild** commands.
 
-### Flash the csolution project to your board
+### Run the csolution project on your board
 
-You must configure a task the first time you want to flash a csolution project to your board.
+You must configure a task the first time you want to run a csolution project on your board.
 
 #### Configure a task
 
@@ -169,15 +169,15 @@ You must configure a task the first time you want to flash a csolution project t
 
 1. Save the `tasks.json` file.
 
-#### Flash the csolution project
+#### Run the csolution project
 
 1. Click the **CMSIS** icon ![CMSIS icon](../docs/images/cmsis-icon.png) in the Activity Bar.
 
-1. Click the **Flash** button ![Flash button](../docs/images/flash-button.png) in the **ACTIONS** panel.
+1. Click the **Run** button ![Run button](../docs/images/run-button.png) in the **ACTIONS** panel.
 
 1. Select **STM32U585AIIx** in the drop-down list that opens at the top of the window.
 
-    The project is flashed to the board.
+    The project is run on the board.
 
 1. Check the **TERMINAL** tab.
 
@@ -208,7 +208,7 @@ In order to debug, you must first add a configuration.
 
 1. For `"program"`, replace `"${command:embedded-debug.getBinaryFile}"` by `"${command:cmsis-csolution.getBinaryFile}"`.
 
-1. For `"cmsisPack"`, indicate the path where the CMSIS-Pack is stored. See [Flash the csolution project to your board](#flash-the-csolution-project-to-your-board).
+1. For `"cmsisPack"`, indicate the path where the CMSIS-Pack is stored. See [Run the csolution project on your board](#run-the-csolution-project-on-your-board).
 
 1. Save the `launch.json` file.
 
