@@ -2,11 +2,16 @@
 
 ## Overview
 
-This extension pack installs recommended extensions for Keil Studio development. The extensions included are listed in the **Details** of the pack in Visual Studio Code and detailed in the [Extensions available in the pack](#extensions-available-in-the-pack) section below.
+The **Keil Studio Pack For Web** installs recommended extensions for embedded and IoT software development on Arm-based microcontroller (MCU) devices. The extensions included are listed in the **Details** of the pack in Visual Studio Code and detailed in the [Extensions available in the pack](#extensions-available-in-the-pack) section below. 
 
-The main Keil Studio extensions available for Visual Studio Code for the Web are **Arm Device Manager** and **Arm Embedded Debugger**. They can work in combination and enable you to flash projects to a device and undertake debugging.
+The main Keil Studio extensions available with this pack are **Arm Device Manager** and **Arm Embedded Debugger**. The extensions can be used together by installing this pack, enabling you to run projects on a device and undertake debugging. Each extension can also be used individually.
 
 This Readme explains how to install the extensions with the **Keil Studio Pack For Web**.
+
+### Intended use cases
+
+- **Embedded software development using CMSIS-Packs and csolution projects**: The "Common Microcontroller Software Interface Standard" (CMSIS) provides driver, peripheral and middleware support for thousands of MCUs and hundreds of development boards. Using the csolution project format, you can incorporate any CMSIS-Pack software component into your application. For more information about supported hardware for CMSIS projects, go to [keil.arm.com](https://www.keil.arm.com/boards/). For an overview on CMSIS-Packs, go to [open-cmsis-pack.org](https://www.open-cmsis-pack.org/index.html).
+- **Enhancement of a pre-existing Visual Studio Code embedded software development workflow**: USB device management and embedded debug can be adapted to other project formats (for example CMake) and toolchains without additional overhead. This use case requires familiarity with Visual Studio Code to configure tasks. See the individual extensions for more details.
 
 ## Submit feedback
 
