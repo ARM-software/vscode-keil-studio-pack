@@ -53,16 +53,18 @@ The main extensions available are:
 
 ## Main steps to set up your development environment
 
-Once the extensions have been installed, there are extra installation and setup tasks to carry out. Check the [CMSIS csolution extension Readme](https://github.com/ARM-software/vscode-cmsis-csolution/blob/main/README.md#install-the-tools) for more details.
+Once the extensions have been installed, there are extra setup tasks to carry out. Check the [CMSIS csolution extension Readme](https://github.com/ARM-software/vscode-cmsis-csolution/blob/main/README.md#install-the-tools) for more details.
 
 Here are the main steps:
 
-- Install a compiler toolchain. Install the Arm Compiler for Embedded toolchain or the Arm GNU Toolchain (includes the GNU Compiler - GCC), or both.
-- Install CMake and Ninja.
-- Install CMSIS-Toolbox.
-- Initialize or update the catalog of public CMSIS-Pack versions.  
-- Install and set up the **clangd** extension. This extension provides IntelliSense support for C/C++ projects and integrates with the **CMSIS csolution** extension.
-- Modify the **Arm CMSIS csolution** extension settings.
+- Install the following tools using Microsoft vcpkg:
+    - Arm GNU Toolchain (includes the GNU Compiler - GCC).
+    - CMSIS-Toolbox.
+    - CMake and Ninja.
+
+- Configure an HTTP proxy (optional).
+
+- Install and set up the clangd extension.
 
 ## Tutorial
 
