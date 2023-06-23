@@ -120,10 +120,13 @@ There are several ways to build your project. You can do it from the **Explorer*
         A `tasks.json` file opens with some default configuration.
 
               ``{
-                  "type": "cmsis-csolution.build",
-                  "project": "${command:cmsis-csolution.getCprjPath}",
-                  "problemMatcher": [],
-                  "label": "cmsis-csolution.build: Build"
+                    "label": "CMSIS Build",
+                    "type": "cmsis-csolution.build",
+                    "solution": "${command:cmsis-csolution.getSolutionPath}",
+                    "project": "${command:cmsis-csolution.getProjectPath}",
+                    "buildType": "${command:cmsis-csolution.getBuildType}",
+                    "targetType": "${command:cmsis-csolution.getTargetType}",
+                    "problemMatcher": []
                 }``
 
         **Note**: You only need to configure the task once.
