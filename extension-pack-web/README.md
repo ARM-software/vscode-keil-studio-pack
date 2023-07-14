@@ -4,7 +4,7 @@
 
 This Readme explains how to install the extensions with the **Keil Studio Pack For Web**.
 
-The **Keil Studio Pack For Web** installs recommended extensions for embedded and IoT software development on Arm-based microcontroller (MCU) devices. The extensions included are listed in the **Details** of the pack in Visual Studio Code and detailed in the [Extensions available in the pack](#extensions-available-in-the-pack) section below. 
+The **Keil Studio Pack For Web** installs recommended extensions for embedded and IoT software development on Arm-based microcontroller (MCU) devices. The extensions included are listed in the **Details** of the pack in Visual Studio Code and described in [Extensions available in the pack](#extensions-available-in-the-pack). 
 
 The main Keil Studio extensions available with this pack are **Arm Device Manager** and **Arm Embedded Debugger**. The extensions can be used together by installing this pack, enabling you to run projects on a hardware and undertake debugging. Each extension can also be used individually.
 
