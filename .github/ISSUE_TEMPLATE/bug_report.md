@@ -2,12 +2,23 @@
 name: Bug Report
 about: Create a report to help us improve.
 title: ''
-labels: ''
+labels: bug
 assignees: ''
 
 ---
 
-<!-- Prior to creating a bug report, please review
+<!-- 
+Report issues with the Keil Studio Pack extension here.
+
+Report issues with…
+- The build tools or csolution standard here: https://github.com/Open-CMSIS-Pack/devtools/issues.
+- The Csolution extension here: https://github.com/ARM-software/vscode-cmsis-csolution/issues.
+- The embedded debug extension here: https://github.com/ARM-software/vscode-embedded-debug/issues.
+- The USB device management extension here: https://github.com/ARM-software/vscode-device-manager/issues.
+
+If you are unsure which component is impacted by your bug report, create it here for triage.
+
+Prior to creating a bug report, please review
 existing issues at https://github.com/ARM-software/vscode-keil-studio-pack/issues
 to avoid creating duplicates.
 -->
@@ -15,7 +26,6 @@ to avoid creating duplicates.
 Type: Bug Report
 
 **Describe the bug**
-- Desktop or Web:
 - OS and Version:
 - VS Code Version:
 - Extension Version:
@@ -35,7 +45,7 @@ Steps to reproduce the behavior:
 
 **Code sample and logs**
 - Code sample
-- `launch.json`
+- `tasks.json`
 
 **Screenshots**
 <!-- If applicable, add screenshots to help explain your problem. -->
