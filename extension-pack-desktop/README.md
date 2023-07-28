@@ -12,13 +12,15 @@ We recommend installing the **Keil Studio Pack** to quickly set up your environm
 
 ## Extensions available in the pack
 
-The main extensions available are:
+The extensions available are:
 
 - **Arm CMSIS csolution** (Identifier: `arm.cmsis-csolution`): This extension provides support for working with CMSIS solutions (csolution projects).
 
 - **Arm Device Manager** (Identifier: `arm.device-manager`): This extension allows you to manage hardware connections for Arm Cortex-M based microcontrollers, development boards and debug probes.
 
 - **Arm Embedded Debugger** (Identifier: `arm.embedded-debug`): This extension allows you to run and debug projects on Arm Cortex-M based microcontrollers, development boards and debug probes implementing the Microsoft Debug Adapter Protocol (DAP).
+
+- **Arm Environment Manager** (Identifier: `arm.environment-manager`): This extension installs the tools you specify in a manifest file in your environment. For example, Arm Compiler for Embedded, CMSIS-Toolbox, CMake, and Ninja can be installed to work with CMSIS solutions.
 
 - **Arm Remote Build** (Identifier: `arm.remote-build`): This extension allows you to undertake remote builds of projects for Arm Cortex-M based microcontrollers. The extension only works with standalone CMSIS projects (containing a single `.cprj` project file). An authentication token is required to access the service.
 
@@ -27,8 +29,6 @@ The main extensions available are:
 **Note**: The **Arm Remote Build** and **Arm Virtual Hardware** extensions are experimental.
 
 The pack also installs:
- 
-- **Microsoft Embedded Tools** (Identifier: `ms-vscode.vscode-embedded-tools`): This extension installs the tools you need to work with CMSIS solutions (csolution projects) from a manifest file. The tools installed are Arm Compiler for Embedded, CMSIS-Toolbox, CMake and Ninja.
 
 - **Red Hat YAML** (Identifier: `redhat.vscode-yaml`): This extension provides YAML syntax support when editing `csolution.yml` or `cproject.yml` files.
 
@@ -51,7 +51,7 @@ The pack also installs:
 1. Click the **Install** button for the extension pack.
 
     Visual Studio Code installs the extensions. 
-    All recommended Keil Studio extensions are now available in the **Extensions** view. The pack also installs the **Microsoft Embedded Tools**, **Red Hat YAML**, **Microsoft C/C++**, and **Microsoft C/C++ Themes** extensions.
+    All recommended Keil Studio extensions are now available in the **Extensions** view, including the  **Arm Environment Manager**. The pack also installs the **Red Hat YAML**, **Microsoft C/C++**, and **Microsoft C/C++ Themes** extensions.
 
     A pop up displays in the bottom right-hand corner with the message "Activate license for Arm tools?". See [Activate your license to use Arm tools](https://developer.arm.com/documentation/108029/latest/Activate-your-license-to-use-Arm-tools) for more details on licensing.
 

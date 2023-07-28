@@ -10,7 +10,7 @@ The main Keil Studio extensions available with this pack are **Arm Device Manage
 
 ## Extensions available in the pack
 
-The main extensions available are:
+The extensions available are:
 
 - **Arm Device Manager** (Identifier: `arm.device-manager`): This extension allows you to manage hardware connections for Arm Cortex-M based microcontrollers, development boards and debug probes.
 
