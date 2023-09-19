@@ -1,10 +1,11 @@
 ## Keil Studio Extension Pack Third Party IP
 
-Report prepared at : 2023-07-19 13:8:58
+Report prepared at : 2023-09-19 16:5:59
 
 | *Package* | *Version* | *Repository* | *License* |
 |---|---|---|---|
 |fontawesome-free|6.1.1|https://github.com/FortAwesome/Font-Awesome|[MIT](https://github.com/FortAwesome/Font-Awesome/blob/6.x/LICENSE.txt)|
+|jsonc-parser|3.2.0|https://github.com/microsoft/node-jsonc-parser|[MIT](https://github.com/microsoft/node-jsonc-parser/blob/main/LICENSE.md)|
 |jszip|3.10.1|https://github.com/Stuk/jszip|[MIT](https://github.com/Stuk/jszip/blob/master/LICENSE.markdown)|
 |node-fetch|2.6.7|https://github.com/node-fetch/node-fetch|[MIT](https://github.com/node-fetch/node-fetch/blob/master/LICENSE.md)|
 |react|18.2.0|https://github.com/facebook/react|[MIT](https://github.com/facebook/react/blob/main/LICENSE)|

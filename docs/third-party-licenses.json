@@ -7,6 +7,13 @@
         "license": "https://github.com/FortAwesome/Font-Awesome/blob/6.x/LICENSE.txt"
     },
     {
+        "name": "jsonc-parser",
+        "version": "3.2.0",
+        "spdx": "MIT",
+        "url": "https://github.com/microsoft/node-jsonc-parser",
+        "license": "https://github.com/microsoft/node-jsonc-parser/blob/main/LICENSE.md"
+    },
+    {
         "name": "jszip",
         "version": "3.10.1",
         "spdx": "MIT",
