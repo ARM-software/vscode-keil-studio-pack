@@ -24,11 +24,9 @@ The extensions available are:
 
 - **Arm Environment Manager** (Identifier: `arm.environment-manager`): This extension installs the tools you specify in a manifest file in your environment. For example, Arm Compiler for Embedded, CMSIS-Toolbox, CMake, and Ninja can be installed to work with CMSIS solutions.
 
-- **Arm Remote Build** (Identifier: `arm.remote-build`): This extension allows you to undertake remote builds of projects for Arm Cortex-M based microcontrollers. The extension only works with standalone CMSIS projects (containing a single `.cprj` project file). An authentication token is required to access the service.
-
 - **Arm Virtual Hardware** (Identifier: `arm.virtual-hardware`): This extension allows you to manage Arm Virtual Hardware and run embedded applications on them. An authentication token is required to access the service.
 
-**Note**: The **Arm Remote Build** and **Arm Virtual Hardware** extensions are experimental.
+**Note**: The **Arm Virtual Hardware** extension is experimental.
 
 The pack also installs:
 
