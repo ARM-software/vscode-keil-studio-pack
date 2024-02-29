@@ -1,19 +1,5 @@
 [
     {
-        "name": "fontawesome-free",
-        "version": "6.1.1",
-        "spdx": "MIT",
-        "url": "https://github.com/FortAwesome/Font-Awesome",
-        "license": "https://github.com/FortAwesome/Font-Awesome/blob/6.x/LICENSE.txt"
-    },
-    {
-        "name": "jsonc-parser",
-        "version": "3.2.0",
-        "spdx": "MIT",
-        "url": "https://github.com/microsoft/node-jsonc-parser",
-        "license": "https://github.com/microsoft/node-jsonc-parser/blob/main/LICENSE.md"
-    },
-    {
         "name": "jszip",
         "version": "3.10.1",
         "spdx": "MIT",
@@ -28,38 +14,10 @@
         "license": "https://github.com/node-fetch/node-fetch/blob/master/LICENSE.md"
     },
     {
-        "name": "react",
-        "version": "18.2.0",
-        "spdx": "MIT",
-        "url": "https://github.com/facebook/react",
-        "license": "https://github.com/facebook/react/blob/main/LICENSE"
-    },
-    {
-        "name": "react-dom",
-        "version": "18.2.0",
-        "spdx": "MIT",
-        "url": "https://github.com/facebook/react",
-        "license": "https://github.com/facebook/react/blob/main/LICENSE"
-    },
-    {
         "name": "vscode-extension-telemetry",
         "version": "0.6.2",
         "spdx": "MIT",
         "url": "https://github.com/microsoft/vscode-extension-telemetry",
         "license": "https://github.com/microsoft/vscode-extension-telemetry/blob/main/LICENSE"
-    },
-    {
-        "name": "vscode-messenger",
-        "version": "0.4.4",
-        "spdx": "MIT",
-        "url": "https://github.com/TypeFox/vscode-messenger",
-        "license": "https://github.com/TypeFox/vscode-messenger/blob/main/LICENSE"
-    },
-    {
-        "name": "webview-ui-toolkit",
-        "version": "0.9.3",
-        "spdx": "MIT",
-        "url": "https://github.com/microsoft/vscode-webview-ui-toolkit",
-        "license": "https://github.com/microsoft/vscode-webview-ui-toolkit/blob/main/LICENSE"
     }
 ]
