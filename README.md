@@ -6,9 +6,7 @@ The Arm® Keil® Studio Pack installs recommended extensions for embedded and Io
 
 We recommend installing the Keil Studio Pack in Visual Studio Code Desktop to quickly set up your environment. 
 
-The main Keil Studio extensions available with the pack are Arm CMSIS csolution, Arm Device Manager, and Arm Embedded Debugger. The extensions enable you to manage CMSIS solutions (csolution projects), run projects on a hardware device, and undertake debugging. You can use the extensions together or individually.
-
-A pre-release of the Keil Studio Pack is also available and includes all the main extensions included in the official pack and Arm Debugger, instead of the Embedded Debugger. The pre-release also includes the Memory Inspector and Peripheral Inspector extensions.
+The main Keil Studio extensions available with the pack are Arm CMSIS csolution, Arm Device Manager, and Arm Debugger. The extensions enable you to manage CMSIS solutions (csolution projects), run projects on a hardware device, and undertake debugging. You can use the extensions together or individually.
 
 This README file explains how to install the extensions with Visual Studio Code Desktop. When you have installed the pack, read the documentation available on Arm Developer to get started. You can [import a csolution example from keil.arm.com](https://developer.arm.com/documentation/108029/latest/Get-started-with-an-example-project/Import-a-csolution-example), [download and convert a μVision project from keil.arm.com](https://developer.arm.com/documentation/108029/latest/Get-started-with-an-example-project/Download-and-convert-a-Keil--Vision-example), [create a csolution project from scratch](https://developer.arm.com/documentation/108029/latest/Arm-CMSIS-csolution-extension/Create-a-csolution-project), or [convert an existing μVision project](https://developer.arm.com/documentation/108029/latest/Arm-CMSIS-csolution-extension/Convert-a-Keil--Vision-project-to-a-csolution-project).
 
@@ -24,15 +22,23 @@ The extensions available are:
 
 - Arm CMSIS csolution (Identifier: `arm.cmsis-csolution`): This extension provides support for working with CMSIS solutions (csolution projects).
 
-- Arm Device Manager (Identifier: `arm.device-manager`): This extension allows you to manage hardware connections for Arm Cortex®-M based microcontrollers, development boards, and debug probes.
+- Arm Debugger (Identifier: `arm.arm-debugger`): This extension provides access to the Arm Debugger engine for Visual Studio Code by implementing the Microsoft Debug Adapter Protocol (DAP). Arm Debugger supports connections to physical targets, either through external debug probes such as the Arm's ULINK™ family of debug probes, or through on-board low-cost debugging such as ST-Link or CMSIS-DAP based debug probes.
 
-- Arm Embedded Debugger (Identifier: `arm.embedded-debug`): This extension allows you to run and debug projects on Arm Cortex-M based microcontrollers, development boards, and debug probes implementing the Microsoft Debug Adapter Protocol (DAP).
+- Arm Device Manager (Identifier: `arm.device-manager`): This extension allows you to manage hardware connections for Arm Cortex®-M based microcontrollers, development boards, and debug probes.
 
 - Arm Environment Manager (Identifier: `arm.environment-manager`): This extension installs the tools that you specify in a manifest file in your environment. For example, you can install Arm Compiler for Embedded, CMSIS-Toolbox, CMake, and Ninja to work with CMSIS solutions.
 
 - Arm Virtual Hardware (Identifier: `arm.virtual-hardware`): This extension allows you to manage Arm Virtual Hardware models and run embedded applications on them. An authentication token is required to access the service.
 
-**Note**: The Arm Virtual Hardware extension is experimental.
+- Memory Inspector (Identifier: `eclipse-cdt.memory-inspector`): This extension allows you to analyze and monitor the memory contents in an embedded system. It helps you to identify and debug memory-related issues during the development phase of your project.
+
+- Peripheral Inspector (Identifier: `eclipse-cdt.peripheral-inspector`): This extension uses System View Description (SVD) files to display peripheral details. SVD files provide a standardized way to describe the memory-mapped registers and peripherals of a microcontroller or a System-on-Chip (SoC).
+
+**Note**: 
+
+- The Arm Virtual Hardware extension is in development, and is not described in this guide.
+
+- The Memory Inspector and the Peripheral Inspector are third-party open-source extensions and are not described in this guide.
 
 The pack also installs:
 
@@ -57,37 +63,13 @@ The pack also installs:
 
 1. Click **Activate**.
 
-## Arm Keil Studio Pack pre-release
-
-The extensions available only in the pre-release are:
-
-- Arm Debugger (Identifier: `arm.arm-debugger`): This extension provides access to the Arm Debugger engine for Visual Studio Code by implementing the Microsoft Debug Adapter Protocol (DAP). Arm Debugger supports connections to physical targets, either through external debug probes such as the Arm's ULINK™ family of debug probes, or through on-board low-cost debugging such as ST-Link or CMSIS-DAP based debug probes.
-
-- Memory Inspector (Identifier: `eclipse-cdt.memory-inspector`): This extension allows you to analyze and monitor the memory contents in an embedded system. It helps you to identify and debug memory-related issues during the development phase of your project.
-
-- Peripheral Inspector (Identifier: `eclipse-cdt.peripheral-inspector`): This extension uses System View Description (SVD) files to display peripheral details. SVD files provide a standardized way to describe the memory-mapped registers and peripherals of a microcontroller or a System-on-Chip (SoC).
-
-To install the pre-release:
-
-1. In Visual Studio Code Desktop, go to the **Extensions** view.
-
-1. Search for **Arm Keil Studio Pack** and select it in the list of available extensions. 
-
-    - If you did not have the official pack already installed, click the arrow next to the **Install** button and select **Install Pre-Release Version**.
-
-    ![Install pre-release version](./docs/images/install-pre-release.png)
-
-    - If you have the official pack already installed, click the **Switch to Pre-Release Version** button on the welcome page that displays when you select the pack from the list.
-
-    ![Switch to pre-release version](./docs/images/install-pre-release-02.png)
-
 ## Submit feedback
 
 To submit feedback, please [see our support page](https://www.keil.arm.com/support/#:~:text=Keil%20Studio%20for%20VS%20Code).
 
 ## Telemetry
 
-This extension collects usage telemetry and sends it to Arm to help improve our products. This extension respects the VS Code telemetry settings described in the [Visual Studio Code documentation](https://code.visualstudio.com/docs/getstarted/telemetry#_disable-telemetry-reporting). Modify telemetry options in the settings menu.
+This extension collects usage telemetry and sends it to Arm to help improve our products. This extension respects the Visual Studio Code telemetry settings described in the [Visual Studio Code documentation](https://code.visualstudio.com/docs/getstarted/telemetry#_disable-telemetry-reporting). Modify telemetry options in the settings menu.
 
 ## License agreement
 
