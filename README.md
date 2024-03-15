@@ -44,9 +44,7 @@ The pack also installs:
 
 - Red Hat YAML (Identifier: `redhat.vscode-yaml`): This extension provides YAML syntax support when editing `csolution.yml` or `cproject.yml` files.
 
-- Microsoft C/C++ (Identifier: `ms-vscode.cpptools`): This extension adds smart features such as code completion, compile errors, and go-to-definition to your editor.
-
-- Microsoft C/C++ Themes (Identifier: `ms-vscode.cpptools-themes`): This extension works in combination with Microsoft C/C++ to provide syntax highlighting.
+- clangd (Identifier: `llvm-vs-code-extensions.vscode-clangd`): This extension adds smart features such as code completion, compile errors, and go-to-definition to your editor.
 
 ## Install the extensions
 
@@ -57,7 +55,7 @@ The pack also installs:
 1. Click the **Install** button for the extension pack.
 
     Visual Studio Code installs the extension pack.
-    All recommended Keil Studio extensions are now available in the **Extensions** view. The pack also installs the Red Hat YAML, Microsoft C/C++, and Microsoft C/C++ Themes extensions.
+    All recommended Keil Studio extensions are now available in the **Extensions** view. The pack also installs the Red Hat YAML and clangd extensions.
 
     A pop-up displays in the bottom right-hand corner with the message "Activate license for Arm tools?". See [Activate your license to use Arm tools](https://developer.arm.com/documentation/108029/latest/Activate-your-license-to-use-Arm-tools) for more details on licensing.
 
