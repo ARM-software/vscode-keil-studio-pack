@@ -22,13 +22,15 @@ The extensions available are:
 
 - Arm CMSIS csolution (Identifier: `arm.cmsis-csolution`): This extension provides support for working with CMSIS solutions (csolution projects).
 
-- Arm Debugger (Identifier: `arm.arm-debugger`): This extension provides access to the Arm Debugger engine for Visual Studio Code by implementing the Microsoft Debug Adapter Protocol (DAP). Arm Debugger supports connections to physical targets, either through external debug probes such as the Arm's ULINK™ family of debug probes, or through on-board low-cost debugging such as ST-Link or CMSIS-DAP based debug probes.
-
 - Arm Device Manager (Identifier: `arm.device-manager`): This extension allows you to manage hardware connections for Arm Cortex®-M based microcontrollers, development boards, and debug probes.
+
+- Arm Debugger (Identifier: `arm.arm-debugger`): This extension provides access to the Arm Debugger engine for Visual Studio Code by implementing the Microsoft Debug Adapter Protocol (DAP). Arm Debugger supports connections to physical targets, either through external debug probes such as Arm's ULINK™ family of debug probes, or through on-board low-cost debugging such as ST-Link or CMSIS-DAP based debug probes.
 
 - Arm Environment Manager (Identifier: `arm.environment-manager`): This extension installs the tools that you specify in a manifest file in your environment. For example, you can install Arm Compiler for Embedded, CMSIS-Toolbox, CMake, and Ninja to work with CMSIS solutions.
 
 - Arm Virtual Hardware (Identifier: `arm.virtual-hardware`): This extension allows you to manage Arm Virtual Hardware models and run embedded applications on them. An authentication token is required to access the service.
+
+Arm Debugger is also an extension pack that contains the following extensions:
 
 - Memory Inspector (Identifier: `eclipse-cdt.memory-inspector`): This extension allows you to analyze and monitor the memory contents in an embedded system. It helps you to identify and debug memory-related issues during the development phase of your project.
 
@@ -36,30 +38,15 @@ The extensions available are:
 
 **Note**: 
 
-- The Arm Virtual Hardware extension is in development, and is not described in this guide.
+- The Arm Virtual Hardware extension is in development, and is not described in the documentation.
 
-- The Memory Inspector and the Peripheral Inspector are third-party open-source extensions and are not described in this guide.
+- The Memory Inspector and the Peripheral Inspector are third-party open-source extensions and are not described in the documentation.
 
 The pack also installs:
 
 - Red Hat YAML (Identifier: `redhat.vscode-yaml`): This extension provides YAML syntax support when editing `csolution.yml` or `cproject.yml` files.
 
 - clangd (Identifier: `llvm-vs-code-extensions.vscode-clangd`): This extension adds smart features such as code completion, compile errors, and go-to-definition to your editor.
-
-## Install the extensions
-
-1. In Visual Studio Code Desktop, go to the **Extensions** view.
-
-1. Search for **Arm Keil Studio Pack**.
-
-1. Click the **Install** button for the extension pack.
-
-    Visual Studio Code installs the extension pack.
-    All recommended Keil Studio extensions are now available in the **Extensions** view. The pack also installs the Red Hat YAML and clangd extensions.
-
-    A pop-up displays in the bottom right-hand corner with the message "Activate license for Arm tools?". See [Activate your license to use Arm tools](https://developer.arm.com/documentation/108029/latest/Activate-your-license-to-use-Arm-tools) for more details on licensing.
-
-1. Click **Activate**.
 
 ## Submit feedback
 
