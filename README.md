@@ -6,13 +6,13 @@ The Arm® Keil® Studio Pack installs recommended extensions for embedded and Io
 
 We recommend installing the Keil Studio Pack in Visual Studio Code Desktop to quickly set up your environment. 
 
-The main Keil Studio extensions available with the pack are Arm CMSIS csolution, Arm Device Manager, and Arm Debugger. The extensions enable you to manage CMSIS solutions (csolution projects), run projects on a hardware device, and undertake debugging. You can use the extensions together or individually.
+The main Keil Studio extensions available with the pack are Arm CMSIS Solution, Arm Device Manager, and Arm Debugger. The extensions enable you to manage CMSIS solutions (csolution projects), run projects on a hardware device, and undertake debugging. You can use the extensions together or individually.
 
-This README file explains how to install the extensions with Visual Studio Code Desktop. When you have installed the pack, read the documentation available on Arm Developer to get started. You can [import a csolution example from keil.arm.com](https://developer.arm.com/documentation/108029/latest/Get-started-with-an-example-project/Import-a-csolution-example), [download and convert a μVision project from keil.arm.com](https://developer.arm.com/documentation/108029/latest/Get-started-with-an-example-project/Download-and-convert-a-Keil--Vision-example), [create a csolution project from scratch](https://developer.arm.com/documentation/108029/latest/Arm-CMSIS-csolution-extension/Create-a-csolution-project), or [convert an existing μVision project](https://developer.arm.com/documentation/108029/latest/Arm-CMSIS-csolution-extension/Convert-a-Keil--Vision-project-to-a-csolution-project).
+This README file explains how to install the extensions with Visual Studio Code Desktop. When you have installed the pack, read the documentation available on Arm Developer to get started. You can [import a solution example from keil.arm.com](https://developer.arm.com/documentation/108029/latest/Get-started-with-an-example-project/Import-a-solution-example), [download a μVision project from keil.arm.com](https://developer.arm.com/documentation/108029/latest/Get-started-with-an-example-project/Download-a-Keil--Vision-example), [create a solution from scratch](https://developer.arm.com/documentation/108029/latest/Arm-CMSIS-Solution-extension/Create-a-solution), or [convert an existing μVision project](https://developer.arm.com/documentation/108029/latest/Arm-CMSIS-Solution-extension/Convert-a-Keil--Vision-project-to-a-solution).
 
 ## Intended use cases for the extensions
 
-- **Embedded and IoT software development using CMSIS-Packs and csolution projects**: The Common Microcontroller Software Interface Standard (CMSIS) provides driver, peripheral, and middleware support for thousands of MCUs and hundreds of development boards. Using the csolution project format, you can incorporate any CMSIS-Pack based device, board, and software component into your application. For more information about supported hardware for CMSIS projects, go to the [Boards](https://www.keil.arm.com/boards/) and [Devices](https://www.keil.arm.com/devices/) pages on keil.arm.com. For information about CMSIS-Packs, go to [open-cmsis-pack.org](https://www.open-cmsis-pack.org/index.html).
+- **Embedded and IoT software development using CMSIS-Packs and solutions (csolution projects)**: The Common Microcontroller Software Interface Standard (CMSIS) provides driver, peripheral, and middleware support for thousands of MCUs and hundreds of development boards. Using the csolution project format, you can incorporate any CMSIS-Pack based device, board, and software component into your application. For more information about supported hardware for CMSIS projects, go to the [Boards](https://www.keil.arm.com/boards/) and [Devices](https://www.keil.arm.com/devices/) pages on keil.arm.com. For information about CMSIS-Packs, go to [open-cmsis-pack.org](https://www.open-cmsis-pack.org/index.html).
 
 - **Enhancement of a pre-existing Visual Studio Code embedded software development workflow**: You can adapt USB device management and embedded debug to other project formats (for example, CMake) and toolchains without additional overhead. This use case requires familiarity with Visual Studio Code to configure tasks. See the individual extensions for more details.
 
@@ -20,7 +20,7 @@ This README file explains how to install the extensions with Visual Studio Code 
 
 The extensions available are:
 
-- Arm CMSIS csolution (Identifier: `arm.cmsis-csolution`): This extension provides support for working with CMSIS solutions (csolution projects).
+- Arm CMSIS Solution (Identifier: `arm.cmsis-csolution`): This extension provides support for working with CMSIS solutions (csolution projects).
 
 - Arm Device Manager (Identifier: `arm.device-manager`): This extension allows you to manage hardware connections for Arm Cortex®-M based microcontrollers, development boards, and debug probes.
 

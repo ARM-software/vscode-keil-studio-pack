@@ -8,14 +8,14 @@
     },
     {
         "name": "node-fetch",
-        "version": "2.6.7",
+        "version": "3.3.2",
         "spdx": "MIT",
         "url": "https://github.com/node-fetch/node-fetch",
         "license": "https://github.com/node-fetch/node-fetch/blob/master/LICENSE.md"
     },
     {
         "name": "vscode-extension-telemetry",
-        "version": "0.6.2",
+        "version": "0.9.6",
         "spdx": "MIT",
         "url": "https://github.com/microsoft/vscode-extension-telemetry",
         "license": "https://github.com/microsoft/vscode-extension-telemetry/blob/main/LICENSE"
