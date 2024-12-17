@@ -15,7 +15,7 @@
     },
     {
         "name": "vscode-extension-telemetry",
-        "version": "0.9.6",
+        "version": "0.9.7",
         "spdx": "MIT",
         "url": "https://github.com/microsoft/vscode-extension-telemetry",
         "license": "https://github.com/microsoft/vscode-extension-telemetry/blob/main/LICENSE"

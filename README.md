@@ -1,8 +1,8 @@
-# Arm Keil Studio Pack for Visual Studio Code
+# Arm Keil Studio Pack (MDK v6) for Visual Studio Code
 
 ## Overview
 
-The Arm® Keil® Studio Pack installs recommended extensions for embedded and IoT software development on Arm-based microcontroller (MCU) devices. The extensions included are listed in the **Details** of the pack in Visual Studio Code and described in [Extensions available in the pack](#extensions-available-in-the-pack).
+The Arm® Keil® Studio Pack (MDK v6) installs recommended extensions for embedded and IoT software development on Arm-based microcontroller (MCU) devices. The extensions included are listed in the **Details** of the pack in Visual Studio Code and described in [Extensions available in the pack](#extensions-available-in-the-pack).
 
 We recommend installing the Keil Studio Pack in Visual Studio Code Desktop to quickly set up your environment. 
 
